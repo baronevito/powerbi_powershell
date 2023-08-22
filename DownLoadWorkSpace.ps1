@@ -11,7 +11,7 @@ function GetAuthToken
     
     $resourceAppIdURI = "https://analysis.windows.net/powerbi/api"
 
-    $authority = "https://login.microsoftonline.com/5a89ca1e-6149-40f1-95b4-3123ceacb89c/oauth2/nativeclient";
+    $authority = "https://login.microsoftonline.com/<tguid>/oauth2/nativeclient";
 
     $authContext = New-Object "Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" -ArgumentList $authority
 
